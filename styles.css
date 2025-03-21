@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.button-container button {
+    flex: none; 
+    width: 80px; 
+    padding: 8px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-container button:hover {
+    background-color: #b71c1c; 
+}
+
+.form-container {
+    display: none;
+    padding: 10px;
+}
+
+.user-box {
+    background-color: #e3f2fd; 
+    border: 1px solid #90caf9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background-color: #d32f2f; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b71c1c; 
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#user-data {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e0f7fa;
+    border-radius: 5px;
+}
+
+#auth-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+#auth-buttons button {
+    width: 100px; 
+    padding: 10px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#auth-buttons button:hover {
+    background-color: #b71c1c; 
+}
+
+#auth-buttons button {
+    width: 100px; 
+    padding: 10px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#auth-buttons button:hover {
+    background-color: #b71c1c; 
+}
+
+#loading-spinner {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    margin-top: 10px;
+}
+
+#loading-spinner::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid red;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

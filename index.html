@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Firebase Authentication</h1>
+
+        <div id="auth-buttons">
+            <button id="show-login">Login</button>
+            <button id="show-signup">Sign Up</button>
+        </div>
+
+        <div id="loading-spinner" style="display: none;">
+            <p>Loading...</p>
+        </div>
+        
+        <div id="auth-forms">
+            <!-- Signup Form -->
+            <div id="signup-form" class="form-container">
+                <h2>Sign Up</h2>
+                <input type="text" id="signup-name" placeholder="Enter Name">  
+                <input type="email" id="signup-email" placeholder="Enter Email">
+                <input type="password" id="signup-password" placeholder="Enter Password">
+                <button id="signup-btn">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="form-container">
+                <h2>Login</h2>
+                <input type="email" id="login-email" placeholder="Enter Email">
+                <input type="password" id="login-password" placeholder="Enter Password">
+                <button id="login-btn">Log In</button>
+            </div>
+        </div>
+
+        <div id="user-info" class="user-box" style="display: none;">
+            <h3>Welcome, <span id="user-name"></span>!</h3>
+            <p>Email: <span id="user-email"></span></p>
+            <p>Account Created: <span id="user-created"></span></p>
+            <button id="logout-btn">Log Out</button>
+        </div>
+
+
+
+        <p id="message"></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
